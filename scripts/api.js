@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000"; // cambiar en producción
+const API_URL = "https://typertrainingback.onrender.com"; // cambiar en producción
 
 async function api(ruta, opciones = {}) {
     const res = await fetch(API_URL + ruta, {
