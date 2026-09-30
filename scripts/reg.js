@@ -45,3 +45,10 @@ formRegistro.addEventListener("submit", async (e) => {
         boton.disabled = false;
     }
 });
+
+(async () => {
+      try {
+          const { ok } = await api("/api/me");
+          if (ok) location.replace("index.html");
+      } catch {}
+})();
